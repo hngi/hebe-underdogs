@@ -45,6 +45,7 @@ main{
 }
 
 .overfloat_text {
+	display: none;
 	position: absolute;
 	top: 40%;
 	left: 15%;
@@ -120,6 +121,10 @@ max-width: 800px;
    .main_content {
    	   margin: auto;
    	   text-align: center;
+   }
+
+   .overfloat_text {
+   	display: block;
    }
 }
 
