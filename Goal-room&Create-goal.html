@@ -1,0 +1,490 @@
+<!doctype html>
+
+<html>
+  <style>
+.container{
+    width: 90%;
+    height:100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+#frog{
+    
+    width: 16.5%;
+    height: 630px;
+    
+    
+}
+#logo{
+    float: right;
+    
+}
+  .content {
+      position: absolute;
+      float: right;
+      margin-top: -35%;
+      margin-right:"";
+      margin-left: 12%;
+      width: 75%;
+      height: 400px;
+      background: #F5F5F0;
+border: 1px solid #9EB680;
+box-sizing: border-box;
+box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
+border-radius: 10px 0px 10px 10px;
+z-index: 1;
+    
+}
+.content h3{
+    color: #1B2326; 
+    padding-left: 40%;
+    padding-top: 80px;
+   
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+   line-height: 135%;
+   float: left;
+}
+.content p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 140%;
+    color: #1B2326;
+    opacity: 0.5;
+    text-align: center;
+    padding-top: 180px;
+
+}
+
+.create_button{
+    width: 250px;
+    height: 55px;
+    background: #628239;
+    border-radius: 5px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    margin-left: 36.5%;
+    margin-top: 0px;
+    cursor: pointer;
+
+}
+.nav{
+    float: right;
+    border: 1px solid rgba(98, 130, 57, 0.46);
+    box-sizing: border-box;
+    border-radius: 6px 6px 0px 0px;
+    margin-left: 1%;
+    margin-right: -1%;
+    margin-top: 124px;
+    width: 100px;
+    height: 30px;
+}
+#nav{
+    float: right;
+    border: 1px solid rgba(98, 130, 57, 0.46);
+    box-sizing: border-box;
+    border-radius: 6px 6px 0px 0px;
+    margin-right: -129px;
+    margin-top: 124px;
+    width: 100px;
+    height: 30px;
+    font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 135%;
+}
+#nav2{
+    float: right;
+    border: 1px solid rgba(98, 130, 57, 0.46);
+    box-sizing: border-box;
+    border-radius: 6px 6px 0px 0px;
+    margin-left: 1%;
+    margin-right: -1%;
+    margin-top: 124px;
+    width: 100px;
+    height: 30px;
+    font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 135%;
+}
+#nav3{
+    float: right;
+    border: 1px solid rgba(98, 130, 57, 0.46);
+    box-sizing: border-box;
+    border-radius: 6px 6px 0px 0px;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 124px;
+    width: 100px;
+    height: 30px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 135%;
+}
+#nav img{
+    padding-top:5px;
+    padding-left:7px;
+    
+}
+
+#nav2 img{
+    padding-top:auto;
+    padding-left: 5px;
+    padding-bottom:auto;
+    
+}
+#nav3 img{
+    padding-top:7px;
+    padding-left:13px;
+}
+.point{
+    float: right;
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 190px;
+    z-index: 2;
+}
+#point{
+    float: right;
+    margin-left: 10Px;
+
+    font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 135%;
+}
+#goal_div{
+    float: right;
+    margin-right: 20px;
+    margin-top: 3px
+}
+#report_div{
+    float: right;
+    margin-right: 8px;
+    margin-top: 1px
+}
+#log_div{
+    float: right;
+    margin-right: 7px;
+    margin-top: 3px
+}
+#name{
+    float: right;
+    padding-top: 20px;
+    margin-left:128px;
+    position: absolute;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.0115367em;
+    color: #1B2326;
+}
+#profile_dp{
+float: right;  
+margin-left: 80px;
+margin-top: -45px;  
+width: 48px;
+height: 48px;
+background: #6E6C68;
+border: 1px solid #FF9934;
+box-sizing: border-box;
+border-radius: 50%;
+}
+/*CSS of create Goal page*/
+#li-1 {
+     justify-content: center;
+    display: flex;
+    position: absolute;
+width: 149px;
+height: 48px;
+right: 343px;
+top: 150px;
+
+border: 1px solid rgba(98, 130, 57, 0.46);
+box-sizing: border-box;
+border-radius: 6px 6px 0px 0px;
+cursor: pointer;
+}
+#li-1:hover {
+    background-color: #E3E9D1;
+}
+#popup{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8); 
+    
+}
+#popup_content{
+   position: absolute; 
+width: 600px;
+height: 600px;
+left: 444px;
+top: 125px;
+
+background: #F2F6E6;
+border: 1px solid #C0B5A5;
+box-sizing: border-box;
+box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.25);
+border-radius: 6px;
+
+}
+#head1 {
+    
+width: 598px;
+height: 55px;
+left: 444px;
+top: 125px;
+
+background: #E3E9D1;
+border: 1px solid #C0B5A5;
+box-sizing: border-box;
+border-radius: 1px;
+
+font-family: Open Sans;
+font-size: 24px;
+text-align: left;
+color: #1B2326;
+
+}
+td {
+  padding-left: 21px;
+  padding-top: 54px;
+  font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+
+color: #1B2326;
+}
+#footer1 {
+    
+width: 598px;
+height: 86px;
+left: 444px;
+top: 638px;
+
+background: #E3E9D1;
+border: 1px solid #C0B5A5;
+box-sizing: border-box;
+border-radius: 1px;
+
+}
+#submit {
+    text-align: center;
+width: 120px;
+height: 40px;
+left: 894px;
+top: 662px;
+
+background: #FFFEFE;
+border: 1px solid #C0B5A5;
+box-sizing: border-box;
+box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+margin-top: -30px;
+margin-bottom: 30px;
+margin-left: 21px;
+font-size: 20px;
+cursor: pointer;
+}
+#submit:hover {
+
+width: 120px;
+height: 40px;
+left: 464px;
+top: 661px;
+
+background: #628239;
+border: 1px solid #C0B5A5;
+box-sizing: border-box;
+box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+}
+#input_N {
+    
+width: 300px;
+height: 40px;
+right: 675px;
+top: 236px;
+
+background: #FFFFFF;
+border: 1px solid #628239;
+border-radius: 6px 6px 0px 0px;
+
+}
+#input_D {
+    
+width: 190px;
+height: 40px;
+right: 426px;
+top: 235px;
+
+background: #FFFFFF;
+border: 1px solid #628239;
+border-radius: 6px 6px 0px 0px;
+
+}
+textarea {
+    
+width: 550px;
+height: 60px;
+right: 426px;
+top: 330px;
+
+background: #FFFFFF;
+border: 1px solid #628239;
+border-radius: 0px;
+
+}
+#select_1 {
+  
+width: 300px;
+height: 40px;
+right: 675px;
+top: 444px;
+
+background: #FFFFFF;
+border: 1px solid #628239;
+border-radius: 0px 0px 6px 6px;
+
+}
+#select_2 {
+
+width: 190px;
+height: 40px;
+right: 426px;
+top: 443px;
+
+background: #FFFFFF;
+border: 1px solid #628239;
+border-radius: 0px 0px 6px 6px;
+
+}
+  </style>  
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">	
+<title>Goal Room</title>
+
+</head>
+
+<body>
+<div class="container">
+    <div id="logo">
+            <img src="new_logo.jpg" alt="">
+    </div>
+    <nav>
+    <div id="nav">
+            <img src="log_out.png" alt=""><div id="log_div"><a>Log Out</a></div>
+    </div>
+    <div id="nav2">
+            <img src="report2.png" alt=""> <div id="report_div"><a>Report</a></div>
+    </div>
+    <div id="nav3">
+            <img src="goal.png" alt=""> <div id="goal_div"><a>Goal</a></div>
+    </div>
+</nav>
+    <div id="name"><h5>Hi, Adetoun</h5><div id=profile_dp></div></div>
+    <div class="point"><img src="point.png" alt=""> <div id="point">Goals</div></div>
+    
+    <div id="frog" >
+            <img src="frog1.png" alt="">   
+        </div>
+        
+        <div class="content">
+            <h3>Welcome!</h3>
+            <p>You curently do not have any goal. Kindly click on the</br> 
+                "Create goal button" to get started!  </p>
+
+        <button class="create_button" id="show_popup">Create Goal</button>
+            </div>
+</div>
+ <div id="popup"> 
+    <div id="popup_content">
+        <form method="POST" action="">
+            <table>
+                <tr id="head1">
+                    <th colspan="2">Add goal</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Name:<br><input type="text" name="text" id="input_N" required></td>
+                    <td  style="margin-left: 21px;">Due Date:<br><input type="date" name="date" id="input_D" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Description:<br><textarea required></textarea></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Priority:<br>
+                        <select id="select_1">
+                            <option value="high">High</option>
+                            <option value="medium">Medium</option>
+                            <option value="low">Low</option>
+                    </select></td>
+                    <td>Measure:<br>
+                        <select id="select_2">
+                            <option value="easy">Easy</option>
+                            <option value="possible">Possible</option>
+                            <option value="tough">Tough</option>
+                            <option value="impossible">Impossible</option>
+                        </select></td>
+                </tr>
+                <tr id="footer1">
+                    <td><input type="submit" name="save" value="Save" id="submit"></td>
+                    <td id="close_popup"><input type="submit" id="submit" name="cancel" value="Cancel"></td>
+                </tr>
+            </table>
+        </form>
+        
+    </div>
+    
+  </div>
+
+  <script type="text/javascript">
+    /*Script of Add Goal*/
+
+var popup = document.getElementById('popup');
+var show_popup = document.getElementById("show_popup");
+var close_popup = document.getElementById("close_popup");
+show_popup.onclick = function(){
+    popup.style.display = "block";
+}
+close_popup.onclick = function(){
+    popup.style.display = "none";
+}
+window.onclick = function(event){
+    if(event.target == popup){
+        popup.style.display = "none";
+    }
+}
+   
+  </script>
+</body>
+</html
